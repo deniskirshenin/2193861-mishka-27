@@ -12,10 +12,10 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/script.js" as="script">
-  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JosefinSans-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/JosefinSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JosefinSans-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/JosefinSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="page__form">
   <header class="form-header header">
@@ -33,15 +33,15 @@
           </svg>
         </a>
         <button class="header-nav__toggle header-nav__toggle--open header-nav__toggle--nojs">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Open menu</span>
         </button>
       </div>
       <ul class="header-nav__list-site header-nav__list-site--closed header-nav__list-site--nojs header-nav__list-site-form site-list__main">
         <li class="site-list__item site-list__item-catalog">
-          <a class="site-list__link site-list__link-catalog" href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link site-list__link-catalog" href="catalog.html">Catalog</a>
         </li>
         <li class="site-list__item site-list__item-order">
-          <a class="site-list__link site-list__link-order" href="form.html">Вязание на заказ</a>
+          <a class="site-list__link site-list__link-order" href="form.html">Knitting to order</a>
         </li>
       </ul>
       <ul class="header-nav__list-user header-nav__list-user--closed header-nav__list-user--nojs user-list">
@@ -50,7 +50,7 @@
           <svg class="user-list__search-icon" width="18" height="18">
             <use xlink:href="./img/sprite.svg#search-icon"></use>
           </svg>
-          <span class="user-list__search-text">Поиск по сайту</span>
+          <span class="user-list__search-text">Site search</span>
         </a>
       </li>
       <li class="user-list__cart cart">
@@ -58,42 +58,42 @@
           <svg class="user-list__cart-icon header__cart-icon" width="21" height="18">
             <use xlink:href="./img/sprite.svg#cart-icon"></use>
           </svg>
-          <span class="user-list__cart-text">Корзина: пока пуста</span>
+          <span class="user-list__cart-text">Cart: currently empty</span>
         </a>
       </li>
     </ul>
-    <small class="header-nav__delivery header-nav__delivery-form">Бесплатная доставка по России</small>
+    <small class="header-nav__delivery header-nav__delivery-form">Free shipping within Russia</small>
       <ul class="header-nav__list-additional header-nav__list-additional-form site-list__additional">
         <li class="site-list__item site-list__item-new">
-          <a class="site-list__link site-list__link-new" href="catalog.html">Новые поступления</a>
+          <a class="site-list__link site-list__link-new" href="catalog.html">New Arrivals</a>
         </li>
         <li class="site-list__item site-list__item-sale">
-          <a class="site-list__link site-list__link-sale" href="form.html">Распродажа</a>
+          <a class="site-list__link site-list__link-sale" href="form.html">Sale</a>
         </li>
       </ul>
       <div class="header-nav__decoration header-nav__decoration-form"></div>
       </nav>
-      <h1 class="header__title form-header__title">Вязание на заказ</h1>
+      <h1 class="header__title form-header__title">Knitting to order</h1>
   </header>
   <main class="form-main-container">
     <form class="form-container" action="https://echo.htmlacademy.ru/" method="get">
-      <p class="form-container__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="form-container__text">We will be happy to make your wishes come true! Fill out a simple order form and we will contact you to clarify the details.</p>
       <fieldset class="form-container__field-group">
         <div class="form-container__field-group-wrapper">
-          <label class="form-container__legend form-container__legend-type">Тип</label>
+          <label class="form-container__legend form-container__legend-type">Type</label>
           <ul class="form-container__field-list form-container__field-list-type">
             <li class="form-container__type-item">
               <label class="form-container__type-item-control" for="interior">
                 <input class="visually-hidden form-container__type-item-input" type="radio" name="type" id="interior" checked>
                 <span class="form-container__type-item-mark"></span>
-                <span class="form-container__type-item-label">Аксессуар для интерьера</span>
+                <span class="form-container__type-item-label">Interior accessory</span>
               </label>
             </li>
             <li class="form-container__type-item form-container__type-item-toy">
               <label class="form-container__type-item-control" for="toy">
                 <input class="visually-hidden form-container__type-item-input" type="radio" name="type" id="toy">
                 <span class="form-container__type-item-mark"></span>
-                <span class="form-container__type-item-label">Детская игрушка</span>
+                <span class="form-container__type-item-label">children's toy</span>
               </label>
             </li>
           </ul>
@@ -101,48 +101,48 @@
       </fieldset>
       <fieldset class="form-container__field-group form-container__field-group-color">
         <div class="form-container__field-group-wrapper form-container__field-group-wrapper-color">
-          <label class="form-container__legend form-container__legend-color">Цвет</label>
+          <label class="form-container__legend form-container__legend-color">Color</label>
           <ul class="form-container__field-list form-container__field-list-color">
             <li class="form-container__color-item">
               <label class="form-container__color-item-control" for="white">
                 <input class="visually-hidden form-container__color-item-input" type="checkbox" name="white" id="white" checked>
                 <span class="form-container__color-item-mark"></span>
-                <span class="form-container__color-item-label">Белый</span>
+                <span class="form-container__color-item-label">White</span>
               </label>
             </li>
             <li class="form-container__color-item">
               <label class="form-container__color-item-control" for="gray">
                 <input class="visually-hidden form-container__color-item-input" type="checkbox" name="gray" id="gray" checked>
                 <span class="form-container__color-item-mark"></span>
-                <span class="form-container__color-item-label">Серый</span>
+                <span class="form-container__color-item-label">Grey</span>
               </label>
             </li>
             <li class="form-container__color-item">
               <label class="form-container__color-item-control" for="tiffany">
                 <input class="visually-hidden form-container__color-item-input" type="checkbox" name="tiffany" id="tiffany">
                 <span class="form-container__color-item-mark"></span>
-                <span class="form-container__color-item-label">Тиффани</span>
+                <span class="form-container__color-item-label">Tiffany</span>
               </label>
             </li>
             <li class="form-container__color-item">
               <label class="form-container__color-item-control" for="black">
                 <input class="visually-hidden form-container__color-item-input" type="checkbox" name="black" id="black">
                 <span class="form-container__color-item-mark"></span>
-                <span class="form-container__color-item-label">Черный</span>
+                <span class="form-container__color-item-label">Black</span>
               </label>
             </li>
             <li class="form-container__color-item form-container__color-item-pink">
               <label class="form-container__color-item-control" for="pink">
                 <input class="visually-hidden form-container__color-item-input" type="checkbox" name="pink" id="pink">
                 <span class="form-container__color-item-mark"></span>
-                <span class="form-container__color-item-label">Розовый</span>
+                <span class="form-container__color-item-label">Pink</span>
               </label>
             </li>
             <li class="form-container__color-item form-container__color-item-orange">
               <label class="form-container__color-item-control" for="orange">
                 <input class="visually-hidden form-container__color-item-input" type="checkbox" name="orange" id="orange">
                 <span class="form-container__color-item-mark"></span>
-                <span class="form-container__color-item-label">Оранжевый</span>
+                <span class="form-container__color-item-label">Orange</span>
               </label>
             </li>
           </ul>
@@ -150,24 +150,24 @@
       </fieldset>
       <fieldset class="form-container__field-group">
         <div class="form-container__field-group-wrapper form-container__field-group-wrapper-name">
-          <label class="form-container__legend form-container__legend-name">ФИО</label>
+          <label class="form-container__legend form-container__legend-name">Full name</label>
           <ul class="form-container__field-list form-container__field-list-name">
             <li class="form-container__name-item">
               <label class="form-container__name-item-control form-container__name-item-control-first-name" for="name">
-                <span class="form-container__name-item-label">Имя:</span>
-                <input class="form-container__input form-container__input-name" type="text" id="name" placeholder="Введите ваше имя*" required>
+                <span class="form-container__name-item-label">Name:</span>
+                <input class="form-container__input form-container__input-name" type="text" id="name" placeholder="Enter your name*" required>
               </label>
             </li>
             <li class="form-container__name-item">
               <label class="form-container__name-item-control form-container__name-item-control-surname" for="surname">
-                <span class="form-container__name-item-label form-container__name-item-label-surname">Фамилия:</span>
-                <input class="form-container__input form-container__input-surname" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                <span class="form-container__name-item-label form-container__name-item-label-surname">Surname:</span>
+                <input class="form-container__input form-container__input-surname" type="text" id="surname" placeholder="Please enter your last name*" required>
               </label>
             </li>
             <li class="form-container__name-item form-container__name-item-patronomyc">
               <label class="form-container__name-item-control form-container__name-item-control-patronomyc" for="patronomyc">
-                <span class="form-container__name-item-label form-container__name-item-label-patronomyc">Отчество:</span>
-                <input class="form-container__input form-container__input-patronomyc" type="text" id="patronomyc" placeholder="Отчество, если желаете" required>
+                <span class="form-container__name-item-label form-container__name-item-label-patronomyc">Middle name:</span>
+                <input class="form-container__input form-container__input-patronomyc" type="text" id="patronomyc" placeholder="Middle name, if you wish" required>
               </label>
             </li>
           </ul>
@@ -175,7 +175,7 @@
       </fieldset>
       <fieldset class="form-container__field-group-contact">
         <div class="form-container__contact form-container__contact-phone">
-          <label class="form-container__legend form-container__legend-contact-phone" for="phone">Тел</label>
+          <label class="form-container__legend form-container__legend-contact-phone" for="phone">Tel</label>
           <input class="form-container__input form-container__input-contact-phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone" required>
           <svg class="form-container__phone-icon" width="25" height="24">
             <use xlink:href="./img/sprite.svg#phone-icon"></use>
@@ -183,29 +183,29 @@
         </div>
         <div class="form-container__contact form-container__contact-email">
           <label class="form-container__legend form-container__legend-contact-email" for="email">e-mail</label>
-          <input class="form-container__input form-container__input-contact-email" type="email" placeholder="Ваш Email*" id="email" required>
+          <input class="form-container__input form-container__input-contact-email" type="email" placeholder="Your Email*" id="email" required>
           <svg class="form-container__email-icon" width="32" height="21">
             <use xlink:href="./img/sprite.svg#email-icon"></use>
           </svg>
         </div>
       </fieldset>
       <div class="form-container__comment">
-        <label class="form-container__legend form-container__legend-comment" for="comment">Доп</label>
-        <textarea class="form-container__input form-container__input-comment" name="comment" id="comment" cols="27" rows="6">Опишите все ваши пожелания к заказу</textarea>
+        <label class="form-container__legend form-container__legend-comment" for="comment">Add</label>
+        <textarea class="form-container__input form-container__input-comment" name="comment" id="comment" cols="27" rows="6">Describe all your wishes for the order</textarea>
       </div>
       <div class="form-container__submit-wrapper">
-        <small class="form-container__remark">*Поля обязательны для заполнения</small>
-        <button class="button--submit button form-container__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        <small class="form-container__remark">*Fields are required</small>
+        <button class="button--submit button form-container__button" type="submit">SEND AN ORDER</button>
       </div>
 
     </form>
   </main>
   <footer class="form-footer">
     <section class="footer">
-      <h2 class="visually-hidden">Наши контакты</h2>
+      <h2 class="visually-hidden">Our contacts</h2>
       <div class="footer__wrapper">
         <section class="footer-logo">
-          <h2 class="visually-hidden">Логотип Мишка</h2>
+          <h2 class="visually-hidden">Mishka Logo</h2>
           <a class="footer-logo__link" href="index.html">
             <svg class="footer-logo__icon" width="102" height="34">
               <use xlink:href="./img/sprite.svg#footer-logo-icon"></use>
@@ -213,7 +213,7 @@
           </a>
         </section>
         <section class="socials">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <h2 class="visually-hidden">we are in social networks</h2>
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="https://vk.com/htmlacademy">
@@ -242,9 +242,9 @@
           </ul>
         </section>
         <section class="copyright">
-          <h2 class="copyright__title">Разработано</h2>
+          <h2 class="copyright__title">Design by</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Академия</span>
+            <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="35">
               <use xlink:href="./img/sprite.svg#copyright-icon"></use>
             </svg>

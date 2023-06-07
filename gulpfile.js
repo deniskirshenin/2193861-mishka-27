@@ -8,10 +8,11 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
+import imagemin from 'gulp-imagemin';
+import webp from "gulp-webp";
 
 // Styles
 
@@ -48,7 +49,7 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg, png}')
-  .pipe(squoosh())
+  .pipe(imagemin())
   .pipe(gulp.dest('build/img'))
 }
 
@@ -61,9 +62,7 @@ const copyImages = () => {
 
 const createWebP = () => {
   return gulp.src('source/img/**/*.{jpg, png}')
-  .pipe(squoosh({
-    webp: {}
-  }))
+  .pipe(webp())
   .pipe(gulp.dest('build/img'))
 }
 
